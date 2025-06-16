@@ -83,9 +83,7 @@ class Main {
         feed.addMessage(Alice.postMessage("Another post."));
 
         List<Message> allMessages = feed.getAllMessages();
-        List<Message> filtered = filter.filterByAuthor(allMessages, "Alice");
-
-        display.showMessages(filtered);
+        display.showMessages(allMessages);
     }
 }
 
